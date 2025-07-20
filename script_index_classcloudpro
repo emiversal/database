@@ -20,6 +20,8 @@
             
             const validUsername = "Admin";
             const validPassword = "1234";
+            const validUsername = "FamiliaVYM";
+            const validPassword = "Pixel#Code24";
             
             if(username === validUsername && password === validPassword) {
                 sessionStorage.setItem('authenticated', 'true');
