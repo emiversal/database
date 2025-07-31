@@ -45,7 +45,14 @@
 { name: 'Uso de Pantallas LCD (Cristal Líquido) con Arduino', icon: 'fas fa-tv', url: 'https://drive.google.com/drive/folders/1SJTGujiEd5tggetki35H23nYmmLVGWfH?usp=sharing', category: 'robotica', description: 'Descubre cómo mostrar datos en tiempo real en pantallas LCD usando Arduino.' },
 { name: 'Control de Motores con Arduino', icon: 'fas fa-cogs', url: 'https://drive.google.com/drive/folders/1IBYGyJwheGwd_J1UsD24u3SMFR5AsKts?usp=sharing', category: 'robotica', description: 'Aprende a manejar motores DC y servos en proyectos automatizados.' },
 { name: 'Implementación de Sensores en Proyectos con Arduino', icon: 'fas fa-microchip', url: 'https://drive.google.com/drive/folders/1Ja6rHw6elF4tCdT6UIdv1yUQkKgyhMJ8?usp=sharing', category: 'robotica', description: 'Integra sensores para recopilar información del entorno y usarla en tus proyectos.' },
-{ name: 'Proyecto: Medición de Temperatura Corporal con LED RGB', icon: 'fas fa-thermometer-half', url: 'https://drive.google.com/drive/folders/1KeVwFl_tMEzsZOenRRsKV16AHwxVUy_N?usp=sharing', category: 'robotica', description: 'Crea un termómetro visual que cambia de color según la temperatura detectada.' }
+{ name: 'Proyecto: Medición de Temperatura Corporal con LED RGB', icon: 'fas fa-thermometer-half', url: 'https://drive.google.com/drive/folders/1KeVwFl_tMEzsZOenRRsKV16AHwxVUy_N?usp=sharing', category: 'robotica', description: 'Crea un termómetro visual que cambia de color según la temperatura detectada.' },
+
+{ name: 'Introducción a Arduino Interactivo', icon: 'fas fa-robot', url: 'https://drive.google.com/drive/folders/1kT_delqIFJ1agI3-l1ZiRDLvd-Rmaxk7?usp=sharing', category: 'robotica', description: 'Conoce los fundamentos de Arduino para comenzar a crear proyectos interactivos que reaccionen al entorno.' },
+{ name: 'Interacción Básica con Botones', icon: 'fas fa-hand-pointer', url: 'https://drive.google.com/drive/folders/1rLl5U3MY3CAvBKPDBtQrCiaWbtlhExS8?usp=sharing', category: 'robotica', description: 'Aprende a usar botones como entrada física para controlar funciones y procesos dentro de tus proyectos Arduino.' },
+{ name: 'Control de Movimiento en Proyectos Arduino', icon: 'fas fa-arrows-alt', url: 'https://drive.google.com/drive/folders/1nOvIJ-kRMVyiC54Hc0fFd7K11XrPWW4C?usp=sharing', category: 'robotica', description: 'Integra motores y mecanismos para generar movimiento en tus proyectos, desde giros hasta desplazamientos.' },
+{ name: 'Incorporación de Audio y Sonidos', icon: 'fas fa-volume-up', url: 'https://drive.google.com/drive/folders/18-RrpzrvqTLA3BlGL7zyM6t5u6CofCak?usp=sharing', category: 'robotica', description: 'Agrega comunicación auditiva a tus creaciones utilizando zumbadores, parlantes o efectos de sonido.' },
+{ name: 'Visualización con Pantallas para Arduino', icon: 'fas fa-desktop', url: 'https://drive.google.com/drive/folders/17wI-bPgKh67mZNTkNJMi2vGEIYjQIJxk?usp=sharing', category: 'robotica', description: 'Muestra datos, estados y mensajes personalizados usando pantallas gráficas o LCD en tus proyectos.' }
+
             ];
 
             function renderMaterials(filter = 'all') {
