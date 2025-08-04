@@ -780,7 +780,7 @@
         "id": 139,
         "title": "Como Mejorar El Comportamiento De Tus Hijos",
         "description": "Estrategias efectivas para la educacion y manejo del comportamiento infantil.",
-        "image": "https://github.com/emiversal/pages/raw/b37a8ff3b8550ab6fa78f7f690d9385a8f59490f/139.png",
+        "image": "https://github.com/emiversal/pages/raw/4dee3cfc92b3571b58eab75a4c875f9dfef57125/139.png",
         "link": "https://drive.google.com/drive/folders/10JuazjqxH6RU4RpQp8eX87mPGnvq4XPu?fbclid=IwZXh0bgNhZW0CMTAAAR3pV65wXoe97bI7UEpQWo-8FAGCAy_Gy9rylOHfUH6fI69AjFywj_rReGs_aem_AZO3_JKJyMQgLGWUKpeAUAk-0bOlpiKxipkiJHiZPFiahWD6X71acny5dkoYJ32I0HjSwO83TjhwSZ4Mz2psQbGT",
         "category": "desarrollo-personal"
     },
@@ -788,7 +788,7 @@
         "id": 140,
         "title": "Curso De Barista Training Online",
         "description": "Conviertete en un experto barista con este curso completo en linea.",
-        "image": "https://github.com/emiversal/pages/raw/b37a8ff3b8550ab6fa78f7f690d9385a8f59490f/140.png",
+        "image": "https://github.com/emiversal/pages/raw/4dee3cfc92b3571b58eab75a4c875f9dfef57125/140.png",
         "link": "https://drive.google.com/drive/folders/1xtVCHnaAcZVP3fAyWcOo9F1t5mTzHOPs?fbclid=IwZXh0bgNhZW0CMTAAAR3iO1BGCzWRizjfWhY_Qwb6nnKMXAzMwwWFW675J-KfpUk313PCNSVTIDU_aem_AZMBfW0qr0IKwSFUb_RdJWdf407j2YuPqR6Gm8-pHSxziDYTsHhRoXcq0s4lSurQ89M6SDmEDphCEVv6uFJY39l7",
         "category": "hogar"
     },
