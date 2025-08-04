@@ -778,7 +778,7 @@
     },
     {
         "id": 139,
-        "title": "Como Manejar El Comportamiento De Tus Hijos",
+        "title": "Como Mejorar El Comportamiento De Tus Hijos",
         "description": "Estrategias efectivas para la educacion y manejo del comportamiento infantil.",
         "image": "https://github.com/emiversal/pages/raw/b37a8ff3b8550ab6fa78f7f690d9385a8f59490f/139.png",
         "link": "https://drive.google.com/drive/folders/10JuazjqxH6RU4RpQp8eX87mPGnvq4XPu?fbclid=IwZXh0bgNhZW0CMTAAAR3pV65wXoe97bI7UEpQWo-8FAGCAy_Gy9rylOHfUH6fI69AjFywj_rReGs_aem_AZO3_JKJyMQgLGWUKpeAUAk-0bOlpiKxipkiJHiZPFiahWD6X71acny5dkoYJ32I0HjSwO83TjhwSZ4Mz2psQbGT",
