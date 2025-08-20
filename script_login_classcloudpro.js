@@ -18,7 +18,9 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         { user: "emiliocolor", pass: 
         "ADMINISTRADOR1234" },
         { user: "mariosaenz86162@gmail.com", pass: 
-        "C​LASSCLOUD2" }
+        "C​LASSCLOUD2" },
+        { user: "axelggarciaguevara@gmail.com", pass: 
+        "CLASSCLOUD3" }
     ];
     const isValid = validUsers.some(u => u.user === username && u.pass === password);
     if (isValid) {
