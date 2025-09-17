@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -187,14 +186,14 @@
 </head>
 <body>
     <div class="background-slider">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro.jpg" alt="Fondo 0">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro1.jpg" class="active" alt="Fondo 1">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro2.jpg" alt="Fondo 2">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro3.jpg" alt="Fondo 3">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro4.jpg" alt="Fondo 4">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro5.jpg" alt="Fondo 5">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro6.jpg" alt="Fondo 6">
-<img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro7.jpg" alt="Fondo 7">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro.jpg" alt="Fondo 0">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro1.jpg" class="active" alt="Fondo 1">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro2.jpg" alt="Fondo 2">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro3.jpg" alt="Fondo 3">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro4.jpg" alt="Fondo 4">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro5.jpg" alt="Fondo 5">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro6.jpg" alt="Fondo 6">
+        <img src="https://raw.githubusercontent.com/emiversal/database/82e46224a535efc7eec6d57d0c88d5cafae1743f/img_background_logins/perro7.jpg" alt="Fondo 7">
     </div>
     <div class="overlay"></div>
     
@@ -229,94 +228,84 @@
             ¿Problemas para acceder? <a href="mailto:emiliocolormexico@gmail.com">Contacta a soporte</a>
         </div>
     </div>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Rotar imágenes de fondo
-    const images = document.querySelectorAll('.background-slider img');
-    let currentIndex = 0;
     
-    function rotateImages() {
-        images.forEach(img => img.classList.remove('active'));
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-    }
-    
-    // Iniciar rotación de imágenes
-    setInterval(rotateImages, 2350);
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Rotar imágenes de fondo
+            const images = document.querySelectorAll('.background-slider img');
+            let currentIndex = 0;
+            
+            function rotateImages() {
+                images.forEach(img => img.classList.remove('active'));
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+            
+            setInterval(rotateImages, 2350);
 
-    // Si ya está autenticado, redirigir directamente a CAPES
-    if (localStorage.getItem('capes_authenticated') === 'true') {
-        window.location.href = 'https://emiliocolor.com/CAPES.html';
-    }
+            // Login
+            const loginForm = document.getElementById('loginForm');
+            if (loginForm) {
+                loginForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const username = document.getElementById('username').value;
+                    const password = document.getElementById('password').value;
+                    const errorMessage = document.getElementById('errorMessage');
+                    
+                    // Credenciales válidas
+                    const validUsers = [
+                        { user: "equipo", pass: "CAPES1234" },
+                    ];
+                    
+                    const isValid = validUsers.some(u => u.user === username && u.pass === password);
+                    
+                    if (isValid) {
+                        // Guardar autenticación en localStorage
+                        localStorage.setItem('capes_authenticated', 'true');
+                        localStorage.setItem('username', username);
+                        
+                        // Redirigir a CAPES.html
+                        window.location.href = 'https://emiliocolor.com/CAPES.html';
+                    } else {
+                        errorMessage.style.display = 'block';
+                        document.getElementById('password').value = '';
+                        
+                        setTimeout(() => {
+                            errorMessage.style.display = 'none';
+                        }, 3000);
+                    }
+                });
+            }
 
-    // Login
-    const loginForm = document.getElementById('loginForm');
-    if (loginForm) {
-        loginForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('errorMessage');
+            // Limpiar formulario
+            const clearBtn = document.getElementById('clearBtn');
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function () {
+                    document.getElementById('username').value = '';
+                    document.getElementById('password').value = '';
+                    document.getElementById('errorMessage').style.display = 'none';
+                    document.getElementById('username').autocomplete = 'off';
+                    document.getElementById('password').autocomplete = 'new-password';
+                    document.getElementById('username').focus();
+                });
+            }
+
+            // Ocultar error al escribir
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
             
-            // Credenciales válidas
-            const validUsers = [
-                { user: "equipo", pass: "CAPES1234" },
-            ];
+            if (usernameInput) {
+                usernameInput.addEventListener('input', function () {
+                    document.getElementById('errorMessage').style.display = 'none';
+                });
+            }
             
-            const isValid = validUsers.some(u => u.user === username && u.pass === password);
-            
-            if (isValid) {
-                // Guardar autenticación en localStorage
-                localStorage.setItem('capes_authenticated', 'true');
-                localStorage.setItem('username', username);
-                
-                // Redirigir a CAPES.html
-                window.location.href = 'https://emiliocolor.com/CAPES.html';
-            } else {
-                errorMessage.style.display = 'block';
-                document.getElementById('password').value = '';
-                
-                setTimeout(() => {
-                    errorMessage.style.display = 'none';
-                }, 3000);
+            if (passwordInput) {
+                passwordInput.addEventListener('input', function () {
+                    document.getElementById('errorMessage').style.display = 'none';
+                });
             }
         });
-    }
-
-    // Limpiar formulario
-    const clearBtn = document.getElementById('clearBtn');
-    if (clearBtn) {
-        clearBtn.addEventListener('click', function () {
-            document.getElementById('username').value = '';
-            document.getElementById('password').value = '';
-            document.getElementById('errorMessage').style.display = 'none';
-            document.getElementById('username').autocomplete = 'off';
-            document.getElementById('password').autocomplete = 'new-password';
-            document.getElementById('username').focus();
-        });
-    }
-
-    // Ocultar error al escribir
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
-    
-    if (usernameInput) {
-        usernameInput.addEventListener('input', function () {
-            document.getElementById('errorMessage').style.display = 'none';
-        });
-    }
-    
-    if (passwordInput) {
-        passwordInput.addEventListener('input', function () {
-            document.getElementById('errorMessage').style.display = 'none';
-        });
-    }
-});
-</script>
-
-
+    </script>
 </body>
-
 </html>
