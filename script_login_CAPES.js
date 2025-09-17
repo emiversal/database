@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 localStorage.setItem('capes_authenticated', 'true');
                 localStorage.setItem('username', username);
                 // Redirigir a CAPES.html sin prefijo
-                window.location.href = '../CAPES.html';
+                window.location.href = 'https://emiliocolor.com/CAPES.html';
             } else {
                 errorMessage.style.display = 'block';
                 document.getElementById('password').value = '';
