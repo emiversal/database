@@ -14,12 +14,14 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('errorMessage');
-  const validUsers = [
-    { user: "emiliocolor", pass: "ADMINISTRADOR1234" },
-    { user: "mariosaenz86162@gmail.com", pass: "CLASSCLOUD2" },
-    { user: "jarturosanmar@gmail.com", pass: "CLASSCLOUD3" },
-    { user: "evan", pass: "CLASSCLOUD4" }
-  ];
+    const validUsers = [
+        { user: "emiliocolor", pass: 
+        "ADMINISTRADOR1234" },
+        { user: "mariosaenz86162@gmail.com", pass: 
+        "C​LASSCLOUD2" },
+        { user: "jarturosanmar@gmail.com", pass: 
+        "CLASSCLOUD3" }
+    ];
     const isValid = validUsers.some(u => u.user === username && u.pass === password);
     if (isValid) {
         sessionStorage.setItem('authenticated', 'true');
