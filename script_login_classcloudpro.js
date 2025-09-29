@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         { user: "mariosaenz86162@gmail.com", pass: 
         "C​LASSCLOUD2" },
         { user: "jarturosanmar@gmail.com", pass: 
-        "CLASSCLOUD3" }
+        "CLASSCLOUD3" },
         { user: "evan", pass: 
         "CLASSCLOUD4" }
     ];
