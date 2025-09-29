@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         { user: "jarturosanmar@gmail.com", pass: 
         "CLASSCLOUD3" },
         { user: "evan", pass: 
-        "ADMINISTRADOR1234" }
+        "CLASSCLOUD4" }
     ];
     const isValid = validUsers.some(u => u.user === username && u.pass === password);
     if (isValid) {
