@@ -21,6 +21,8 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         "C​LASSCLOUD2" },
         { user: "jarturosanmar@gmail.com", pass: 
         "CLASSCLOUD3" }
+        { user: "evan", pass: 
+        "CLASSCLOUD4" }
     ];
     const isValid = validUsers.some(u => u.user === username && u.pass === password);
     if (isValid) {
